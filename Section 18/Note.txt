@@ -1,0 +1,12 @@
+Important Note
+Section 18, Lecture 77
+
+Please note that with this lecture, We are wrapping up MYSQL training.
+
+And from the next section, We will begin our Phase 2 Learning on Security (Pen) Testing.
+
+All the remaining videos from next section will completely focus on Security testing concepts.
+
+
+
+All the Best!

@@ -1,0 +1,47 @@
+Material for Reference
+Section 25, Lecture 116
+Material for reference
+
+
+Account Security:
+
+Password Security is driven by two factors :
+
+Strength of Password
+
+Uniqueness of password
+
+Check your Password strength from here :
+
+passwordmeter.com
+
+List of Passwords :
+
+###a class="external-link" href="https://dazzlepod.com/site_media/txt/passwords.txt" rel="nofollow noreferrer" target="_blank">https://dazzlepod.com/site_media/txt/passwords.txt
+
+Sources of Attacking Passwords :
+
+Main in the middle attack
+
+Password retrieved as a cookie with XSS
+
+Account brute forced via HTTP Post
+
+Admin facility compromised
+
+SQL injection risk exploited
+
+Best Practises to be followed in Securing Account Details
+
+1.Emailing credentials on account creation
+2. Forgot password message display methods
+
+3. password reset mail consequences
+
+4. Password storage Pattern
+
+5 Remember me password
+
+6. ReAuthenticate few imp features
+
+7. Bruteforce attack handling Mechanisim

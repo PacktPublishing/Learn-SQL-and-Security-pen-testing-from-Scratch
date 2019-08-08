@@ -1,0 +1,9 @@
+Please Note
+
+Section 1, Lecture 2
+
+We shall be starting with SQL Training from the next section. We will spend around 6 hours to learn all the basics of SQL from scratch with real time examples.
+
+And then we will jump into Phase 2 - Security testing for another 6 hours.
+
+All the Best and lets begin our Journey with SQL!

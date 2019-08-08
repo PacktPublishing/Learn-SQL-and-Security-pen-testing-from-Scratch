@@ -1,0 +1,60 @@
+SQL glossary on discussed topics
+Section 7, Lecture 30
+use world;
+
+select * from city;
+
+select name from city where countrycode like 'A%';
+
+select countrycode from city where countrycode like 'A%';
+
+select countrycode from city where countrycode like '__T%';
+
+select countrycode from city where countrycode like '_A%';
+
+use qadbt;
+
+select * from employeeinfo order by name;
+
+select * from employeeinfo order by id;
+
+select * from employeeinfo order by id desc;
+
+use Business;
+
+
+
+select * from Transactions;
+
+
+
+select sum(Amount),Month from Transactions group by Month;
+
+select Max(Amount), Month from Transactions group by Month;
+
+select Min(Amount), Month from Transactions group by Month;
+
+select Min(Amount), Month from Transactions group by Month;
+
+select Min(Amount), Month,branch from Transactions group by branch;
+
+select Avg(Amount), Month from Transactions group by Month;
+
+
+
+
+
+select count(*),Month from Transactions group by Month having count(*)<2;
+
+
+
+select sum(Amount),Month from Transactions where branch = 'bangalore' or branch ='chicago' group by Month having sum(Amount)>20000;
+
+
+
+select sum(Amount),Month from Transactions where branch ='paris' or branch ='sydney' group by Month having sum(Amount)<1000;
+
+
+
+select sum(Amount),branch from Transactions where Month='feb' group by branch having sum(Amount)>4000;
+

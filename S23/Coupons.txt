@@ -1,0 +1,58 @@
+Bonus Lecture- Discount coupons for other courses
+Section 25, Lecture 117
+I hope you enjoyed the SQL + Pen Testing course. Its time to enhance our skills with other Automation tools.
+
+
+
+****************************************************************************************
+I would suggest you to continue your learning Journey with below courses, of course with Maximum discount - Expires by May 27th
+
+***************************************************************************************
+
+1. Your next learning Goal is to get master in Web Automation Testing using SELENIUM which is must for every Software Engineer. You can learn  SELENIUM+ Automation Frameworks with the help of my below course coupon:
+
+https://www.udemy.com/selenium-real-time-examplesinterview-questions/?couponCode=EASYSTUFF
+
+
+
+Once you are done with Web Automation learning then jump into API Automation Testing which is must for every Software Engineer. You can get Mastered in API Testing with the help of my below course coupons:
+
+If you want to master API Automation using SoapUI tool, then below course will help
+
+https://www.udemy.com/webservices-testing-with-soap-ui/?couponCode=STUDENTOFF2
+
+If you want to master API Automation using Java, then below course will help
+
+https://www.udemy.com/rest-api-automation-testing-rest-assured/?couponCode=FALLSPECIAL
+
+
+
+3. It is also recommended to enhance your knowledge on Angular Web Automation tool Protractor. Protractor Skill is trending and most demanding skill in Current QA Industry
+
+You can get complete knowledge on Angular Automation tool in below link
+
+https://www.udemy.com/protractor-tutorial/?couponCode=MASTERCOURSE
+
+
+
+4. Interested in JIRA- Project Management tool for Agile Scrum Management.? Below is the course which explains end to end Real time Project duties and responsibilities using JIRA tool for Agile Scrum Projects with deeper understanding of Software Testing concepts
+
+https://www.udemy.com/learn-software-testing-in-practical-become-a-qa-expert/?couponCode=NEWYEAR
+
+
+
+5. You can Master in Performance Testing with Open source testing tool "JMETER". Check out below course to learn JMETER from scratch and become powerful Load Tester
+
+https://www.udemy.com/learn-jmeter-from-scratch-performance-load-testing-tool/?couponCode=ALPHABET
+
+
+
+6.. And Finally you should not miss the 1 powerful course to Understand and implement Cucumber Framework which is common Platform for Web, Mobile and API Automation.
+
+You can get complete knowledge on this tool by checking out my below course
+
+https://www.udemy.com/cucumber-tutorial/?couponCode=STUFFLOADED
+
+
+
+All the Best !! And see you there in my other courses

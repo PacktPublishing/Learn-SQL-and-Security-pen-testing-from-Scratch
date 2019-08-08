@@ -1,0 +1,49 @@
+SQL Glossary
+Section 13, Lecture 61
+
+
+
+
+
+
+create table CustomersDetails(customerId int(50),address varchar(50),zipcode varchar(50),primary Key(customerId));
+
+
+
+create table CustomersDetails2(customerId int(50),address varchar(50),zipcode varchar(50),primary Key(customerId));
+
+
+
+create table OrdersDetails2(orderId int(50),customerId int(50),Amount int(50),date varchar(50),primary Key(orderId), Foreign Key(customerId) REfERENCES CustomersDetails2(customerId) ON DELETE CASCADE);
+
+create table OrdersDetails(orderId int(50),customerId int(50),Amount int(50),date varchar(50),primary Key(orderId), Foreign Key(customerId) REfERENCES CustomersDetails(customerId));
+
+drop table OrdersDetails2;
+
+
+
+Insert into CustomersDetails values(1234567,'bangalore',9999);
+
+Insert into CustomersDetails2 values(123456,'bangalore',9999);
+
+
+
+Insert into OrdersDetails2 values(87353,123456,999,'jan');
+
+Insert into OrdersDetails values(8735365,1234567,999,'jan');
+
+
+
+select * from CustomersDetails2;
+
+select * from OrdersDetails;
+
+delete from CustomersDetails where customerId=12345;
+
+delete from CustomersDetails where customerId=123456;
+
+
+
+delete from OrdersDetails where customerId=123456;
+
+

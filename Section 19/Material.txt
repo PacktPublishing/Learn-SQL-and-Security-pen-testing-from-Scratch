@@ -1,0 +1,61 @@
+Material for Reference
+Section 21, Lecture 93
+Material for reference
+QA Click Academy :
+
+What is XSS?
+Cross Site Scripting also known as XSS , is one of the most common web appliction vulnerability that allows an attacker to run his own client side scripts(especially Javascript) into web pages viewed by other users.
+
+Where the Attacker can run his scripts?
+
+url post string
+https://www.google.co.in/#q=web+application
+form submission
+TextAreas
+
+In a typical XSS attack, a hacker inject his malicious javascript code in the legitimate website . When a user visit the specially-crafted link , it will execute the malicious javascript. A successfully exploited XSS vulnerability will allow attackers to do phishing attacks, steal accounts and even worms.
+
+Different Websites apply filters at different levels
+
+http://www.nowrunning.com/bollywood-movie-directory/srin
+
+Let us where it stores
+
+Why it is not accepting?
+
+Try to identify Filter conditions:
+Half Secure
+
+http://www.allmovie.com/search
+
+Accepting- No filter
+
+How it stores?
+
+Differrent encoding Patterns Available
+
+But still not secure
+
+https://www.neat.com/?post_type=helpcenter&s=%3Ci%3Ehello%3C/i%3E
+
+Perfect
+
+https://www.learnsocial.com/searchcourse?type=All&searchby=%3Ci%3Ehrlo%3C/i%3E&refs=&sear
+
+ch_position=&search_value=
+
+Boom!!
+
+Internet Explorer 8 included a novel new feature to help prevent reflected cross-site scripting attacks, known as the XSS Filter. This filter runs by default in the Internet, Trusted, and Restricted security zones. Local Intranet zone pages may opt-in to the protection using the same header:
+
+X-XSS-Protection: 1
+
+If a cross-site scripting attack is detected, Internet Explorer 8 and 9 will attempt to make the smallest possible modification to the returned web page in order to block the attack. Here's an example. In most cases, the modification is to change one or more characters in the returned page into the hash character (“#”) breaking any script that may have been reflected from the outbound HTTP request.
+
+Pages that have been secured against XSS via server-side logic may opt-out of this protection using a HTTP response header:
+
+X-XSS-Protection: 0
+
+In March of 2010, They have added to IE8 support for a new token in the X-XSS-Protection header, mode=block.
+
+X-XSS-Protection: 1; mode=block

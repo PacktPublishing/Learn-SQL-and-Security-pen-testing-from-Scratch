@@ -1,0 +1,28 @@
+Material for Reference
+Section 23, Lecture 106
+Material for reference
+
+Session Hijacking & Cross-Site Request Forgery(CSRF)
+A CSRF attack forces an authenticated user(victim) to send a forged HTTP request, including the victim's session cookie to a vulnerable web application which allows the attacker to force the victim's browser to generate request such that the vulnerable app perceives as legitimate requests from the victim.
+Let us say, the vulnerable app sends a state changing request as a plain text without any encryption.
+
+http://handbook.com/app?action=updatestatus&sessionid=3500&dstatus=hello
+
+Now the hacker constructs a request that will transfer money from the victim's account to the attacker's account by embedding the request in an image that is stored on various sites under the attacker's control:
+
+<imgsrc=" http://handbook.com/app?action=updatestatus&sessionid=3500&dstatus=hello"width="0"height="0"/>
+
+How to Avoid Cross-Site Request Forgery(CSRF)
+The use of cryptographic tokens can provide frequent authentication in the background so the user is not constantly pestered by authentication requests.
+Below are the steps which to be followed
+For each user session, logged-in or otherwise, server generates a unique token and stores that in the session cookie, which is additionally digitally signed server-side to detect tampering.
+The server then places this token as a hidden field into every form on every page that it renders. If a user submits the form normally, say, by clicking the “Submit” button, the token will be sent to the server as a form parameter, as well as in the cookie.
+The server then checks to see that the token in the cookie matches the token in the form parameter. If they don't match, the request is assumed to be forged, the action is not performed, and the user is forcibly logged out.
+What we need to as a Pen Tester to check CSRF?
+Check whether confidential data is going as part of POST
+Check whether hidden field is set for the data submissions
+Change the cookie token value and sent the request,It should not accept
+Open the Site in other System,.Get the Token id of that session and use it in current session to submit the request – It should not accept
+Use same values for both the tokens (hidden field and cookie ) and submit – It should not accept
+Make sure this Anti forgery tokens are set for all the confidential data submissions
+http://coolmoviez.co/hollywood_dubbed_movies/fast_and_furious_6._(2013)_/

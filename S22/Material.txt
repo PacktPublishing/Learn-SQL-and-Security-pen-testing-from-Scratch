@@ -1,0 +1,22 @@
+Material for Reference
+Section 24, Lecture 110
+Material for reference
+
+Parameter Tampering :
+
+Parameter tampering is a form of Web-based attack in which certain parameters in the Uniform Resource Locator (URL) or Web page form field data entered by a user are changed without that user's authorization.
+
+Parameter tampering can often be done with:
+
+Cookies
+
+Form Fields
+
+URL Query Strings
+
+HTTP Headers
+
+http://banking.com/id-=12354
+
+Importance of Server Side Validations to Protect Website
+

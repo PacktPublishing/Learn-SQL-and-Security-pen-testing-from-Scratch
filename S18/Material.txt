@@ -1,0 +1,58 @@
+Material for Reference
+Section 20, Lecture 84
+Material for Reference
+
+Hypertext Transfer Protocol(HTTP) :
+
+is a protocol used in networking. When you type any web address in your web browser, your browser acts as a client, and the computer having the requested information acts as a server. When client requests for any information from the server, it uses HTTP protocol to do so. The server responds back to the client after the request completes. The response comes in the form of web page which you see just after typing the web address and press “Enter”.
+
+Hypertext Transfer Protocol Secure (HTTPS)
+
+is a combination of two different protocols. It is more secure way to access the web. It is combination of Hypertext Transfer Protocol (HTTPS) and SSL/TLS protocol. It is more secure way to sending request to server from a client, also the communication is purely encrypted which means no one can know what you are looking for. This kind of communication is used for accessing those websites where security is required. Banking websites, payment gateway, emails
+
+https://, that basically means your computer is talking to the website in a secure code that no one can eavesdrop on.
+
+Basic Features
+
+There are three basic features that make HTTP a simple but powerful protocol:
+
+HTTP is connectionless: The HTTP client, i.e., a browser initiates an HTTP request and after a request is made, the client disconnects from the server and waits for a response. The server processes the request and re-establishes the connection with the client to send a response back.
+
+HTTP is media independent: It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.
+
+HTTP is stateless: As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages.
+
+Two HTTP Request Methods: GET and POST
+
+Two commonly used methods for a request-response between a client and server are: GET and POST.
+
+GET - Requests data from a specified resource
+POST - Submits data to be processed to a specified resource
+The GET Method
+
+Note that the query string (name/value pairs) is sent in the URL of a GET request:
+
+/test/demo_form.asp?name1=value1&name2=value2
+
+Some other notes on GET requests:
+
+GET requests can be cached
+GET requests remain in the browser history
+GET requests can be bookmarked
+GET requests should never be used when dealing with sensitive data
+GET requests have length restrictions
+GET requests should be used only to retrieve data
+POST Method
+
+Note that the query string (name/value pairs) is sent in the HTTP message body of a POST request:
+
+POST /test/demo_form.asp HTTP/1.1
+Host: w3schools.com
+name1=value1&name2=value2
+
+Some other notes on POST requests:
+
+POST requests are never cached
+POST requests do not remain in the browser history
+POST requests cannot be bookmarked
+POST requests have no restrictions on data length

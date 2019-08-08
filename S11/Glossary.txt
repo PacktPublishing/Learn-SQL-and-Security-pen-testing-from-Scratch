@@ -1,0 +1,52 @@
+SQL GLossary
+Section 11, Lecture 51
+select * from College;
+
+
+
+select * from Results;
+
+
+
+select * from College union (select * from Results);
+
+
+
+select * from College union all(select * from Results);
+
+
+
+select * from college where id in (select id from Results);
+
+
+
+select id from Results;
+
+select * from College where id = 53;
+
+
+
+select * from College where exists ( select * from College where name='Ramfdsfd');
+
+
+
+select * from Marks;
+
+
+
+select score,case name
+
+when 'tim' then score*2
+
+when 'sam' then score-25
+
+when 'tina' then score*3
+
+else score
+
+end
+
+'NewScore',name from Marks;
+
+
+
